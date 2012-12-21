@@ -1,0 +1,11 @@
+#!/bin/bash
+
+test=`coffeelint -f coffeelint.json application.js.coffee helpers/v1.0/*.coffee modules/v1.0/*.coffee | grep Ok! | awk '{ print $1 }'`
+
+if [ "$test" != '✓' ]; then
+	coffeelint -rf coffeelint.json application.js.coffee helpers/v1.0/*.coffee modules/v1.0/*.coffee
+	echo -e "\e[00;31mCoffeelint Tests Failed.\e[00m"
+	exit 1
+else
+	echo -e "\e[00;32m✓ Coffeelint Tests Passed.\e[00m"
+fi
