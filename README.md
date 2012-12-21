@@ -15,3 +15,7 @@ Usage
 =
 
 Once Bower has been successfully installed, you can grab the project dependencies by running `bower install` from the root folder of this project.
+
+We also use Coffeelint (http://www.coffeelint.org/) and the configuration file can be found at `./coffeelint.json`. 
+
+_When editing files, ensure that they pass all Coffeelint tests._
