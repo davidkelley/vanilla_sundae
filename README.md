@@ -11,6 +11,17 @@ Bower Installation
 * *NodeJS:* https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 * *Bower:* http://twitter.github.com/bower/
 
+Pre-commit Hook Installation
+=
+
+We have provided a pre-commit (`./pre-commit') git hook file to help ensure coffeelint tests pass before any code is committed. Usage of this git hook is optional, however all coffeelint tests must pass before any commits are accepted. To use the hook, simply follow the instructions below.
+
+1. From the project root..
+2. `cp pre-commit .git/hooks/`
+3. `chmod +x .git/hooks/pre-commit`
+
+When committing any changes, you should notice the inclusion of the coffeelint tests.
+
 Usage
 =
 
@@ -18,4 +29,3 @@ Once Bower has been successfully installed, you can grab the project dependencie
 
 We also use Coffeelint (http://www.coffeelint.org/) and the configuration file can be found at `./coffeelint.json`. 
 
-_When editing files, ensure that they pass all Coffeelint tests._
