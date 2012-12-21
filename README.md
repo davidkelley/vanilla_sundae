@@ -6,10 +6,17 @@ This Javascript library uses Bower to manage external third-party dependencies. 
 Bower Installation
 =
 
-*Requires NodeJS and its accompanying package manager, NPM. Installation guides here:*
+Requires NodeJS and its accompanying package manager, NPM. Installation guides here:
 
 * *NodeJS:* https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 * *Bower:* http://twitter.github.com/bower/
+
+Coffeelint Installation
+=
+
+We use Coffeelint to ensure that our codebase style, stays clean and consistent. Coffeelint itself requires NodeJS and NPM as pre-requisites for installation. See above.
+
+To install coffeelint, simply run `npm install -g coffeelint` (Installs coffeelint globally)
 
 Pre-commit Hook Installation
 =
