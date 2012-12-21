@@ -1,4 +1,4 @@
 #Perform top-level application initialisation
-require ['module/stub', 'module/delegate', 'lib/modernizr'], (s,d) ->
+require ['module/stub', 'helper/delegate', 'modernizr'], (s,d) ->
   d '.btn', 'click', ->
     console.log "clicked"

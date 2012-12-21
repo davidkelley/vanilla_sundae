@@ -1,5 +1,5 @@
 Vanilla Sundae
-==
+===
 
 This Javascript library uses Bower to manage external third-party dependencies. Although a component.json file is defined, this library is not registered with Bower itself.
 
@@ -21,7 +21,7 @@ To install coffeelint, simply run `npm install -g coffeelint` (Installs coffeeli
 Pre-commit Hook Installation
 =
 
-We have provided a pre-commit (`./pre-commit') git hook file to help ensure coffeelint tests pass before any code is committed. Usage of this git hook is optional, however all coffeelint tests must pass before any commits are accepted. To use the hook, simply follow the instructions below.
+We have provided a pre-commit (`./pre-commit`) git hook file to help ensure coffeelint tests pass before any code is committed. Usage of this git hook is optional, however all coffeelint tests must pass before any commits are accepted. To use the hook, simply follow the instructions below.
 
 1. From the project root..
 2. `cp pre-commit .git/hooks/`
