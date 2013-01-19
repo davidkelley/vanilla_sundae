@@ -1,3 +1,3 @@
 #Perform top-level application initialisation
-require ['helper/binder', 'helpers/binds'], (Binder, binds) ->
-  new Binder binds
+require ['helper/binder', 'helper/binds'], (Binder, binds) ->
+  Binder binds
