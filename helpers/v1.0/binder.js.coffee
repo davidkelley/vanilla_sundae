@@ -1,4 +1,4 @@
-define ['helpers/delegate'], (delegation) ->
+define ['helper/delegate'], (delegation) ->
   (events) -> 
     for event in events
       for action in event
