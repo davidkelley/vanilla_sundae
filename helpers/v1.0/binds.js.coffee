@@ -1,9 +1,9 @@
 define [], -> 
   {
-    '.btn-group': {
+    '.btn-group .dropdown-toggle': {
       click: [
         (e) ->
-          this.classList.toggle('open')
+          this.parentNode.classList.toggle('open')
       ]
     } 
   }

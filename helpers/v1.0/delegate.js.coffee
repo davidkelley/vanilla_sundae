@@ -25,7 +25,11 @@ define [], ->
         return false
 
       # Call the handler only if a matching element was found
-      handler.call src, e if matcher.call src, selector
+      while src 
+        match = matcher.call src, selector
+        handler.call src, e if match
+        break if match
+        src = src.parentNode
 
     # Bind the event, fallback for IE 
     if document.addEventListener then document.addEventListener event, fnc else document.attachEvent "on"+event, fnc
