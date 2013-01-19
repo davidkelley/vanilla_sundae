@@ -1,9 +1,9 @@
 define [], -> 
-	{
-		'.btn-group': {
-			click: [
-				(e) ->
-					this.classList.toggle('open')
-			]
-		}
-	}
+  {
+    '.btn-group': {
+      click: [
+        (e) ->
+          this.classList.toggle('open')
+      ]
+    } 
+  }
