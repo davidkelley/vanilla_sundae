@@ -25,7 +25,7 @@ define [], ->
         return false
 
       # Call the handler only if a matching element was found
-      while src 
+      while src != document
         match = matcher.call src, selector
         handler.call src, e if match
         break if match
