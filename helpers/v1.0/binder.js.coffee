@@ -1,6 +1,6 @@
 define ['helper/delegate'], (delegation) ->
   (events) -> 
-    for event in events
-      for action in event
+    for ev, event of events
+      for ac, action of event
         for handler in action
-          delegation event, action, handler
+          delegation ev, ac, handler
